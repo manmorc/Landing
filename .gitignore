@@ -1,0 +1,19 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/inspectionProfiles/
+.idea/workspace.xml
+bower_components/jquery/
+bower_components/normalize.css/.bower.json
+bower_components/normalize.css/.editorconfig
+bower_components/normalize.css/.gitattributes
+bower_components/normalize.css/.gitignore
+bower_components/normalize.css/.travis.yml
+bower_components/normalize.css/CHANGELOG.md
+bower_components/normalize.css/CONTRIBUTING.md
+bower_components/normalize.css/LICENSE.md
+bower_components/normalize.css/README.md
+bower_components/normalize.css/normalize.css
+bower_components/normalize.css/package-lock.json
+bower_components/normalize.css/package.json
+bower_components/normalize.css/test.html
+build/
+node_modules/

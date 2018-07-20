@@ -1,0 +1,64 @@
+.weCreate {
+  height: 100vh;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    .devider {
+      height: 5px;
+      width: 50px;
+      background: #B1B1B1;
+      margin: 0 15px;
+    }
+    .text {
+      width: 110px;
+      color: #B1B1B1;
+      font-weight: 900;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+  .types {
+    display: flex;
+    flex-direction: column;
+
+    .type {
+      display: flex;
+      align-items: center;
+
+      .img {
+        width: 80px;
+        height: 80px;
+        margin: 30px 36px 30px 26px;
+        background-color: #F2F2F2;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .text {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: #B7B3B3;
+        width: 143px;
+        text-align: left;
+      }
+      .circle {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+      .square {
+
+      }
+      .triangle {
+
+      }
+
+    }
+  }
+  .laptop { background: url(../../img/icon-laptop.svg)}
+  .watch { background: url(../../img/icon-watch.svg)}
+  .network { background: url(../../img/icon-network.svg)}
+}

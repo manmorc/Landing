@@ -1,0 +1,62 @@
+.slider {
+  width:270px;
+  height: 180px;
+  margin: 25px auto auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  width:270px;
+  height: 180px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: slid;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+  from {
+    top: 0;
+    left: 0;
+  }
+  12.5% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-500px, 0);
+  }
+  36% {
+    transform: translate(-500px, 300px);
+  }
+  37% {
+    transform: translate(500px, 300px);
+  }
+  87.5% {
+    transform: translate(500px, 0);
+
+  }
+  to {
+    transform: (0px, 0px);
+  }
+}
+
+.slide1 {
+  background: url(../../img/pre-view-1.png);
+  animation-delay: 7.5s;
+}
+.slide2 {
+  background: url(2.jpg);
+  animation-delay: 5s;
+}
+.slide3 {
+  background: url(3.jpg);
+  animation-delay: 2.5s;
+}
+.slide4 {
+  background: url(4.jpg);
+  animation-delay: 0s;
+}

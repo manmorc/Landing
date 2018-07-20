@@ -1,8 +1,44 @@
 .creatingCites {
+  position: relative;
+  text-align: center;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+
   .title {
-    margin-top: 110px;
+    padding-top: 110px;
   }
   .postTitle {
-    margin: 50px;
+    margin-top: 5px;
+    color: #B7B3B3;
+  }
+  .order {
+    margin-top: 25px;
+    color:white;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 14px 20px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.2);
+  }
+  .slider {
+    margin-top: 65px;
+  }
+  .next {
+    color:white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border:none;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    font-weight: bold;
+    background:#E7DEDE url(../../img/icon-next.svg) no-repeat center center;
   }
 }
