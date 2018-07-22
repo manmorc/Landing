@@ -30,6 +30,7 @@
       align-items: center;
 
       .img {
+        border: 2px solid #FF3E8F;
         width: 80px;
         height: 80px;
         margin: 30px 36px 30px 26px;
@@ -49,17 +50,121 @@
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
+        position: relative;
+        &:before{
+          @include rotate(3s);
+          content: ' ';
+          border: 1px solid #D5D5D5;
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          top: -6px;
+          left: -6px;
+          position: absolute;
+          display: block;
+        }
+        &:after{
+          @include rotate(4s);
+          content: ' ';
+          border: 1px solid #D5D5D5;
+          width: 86px;
+          height: 86px;
+          border-radius: 50%;
+          top: -4px;
+          left: -4px;
+          position: relative;
+          display: block;
+        }
       }
       .square {
-
+        position: relative;
+        &:before{
+          @include rotate(4s);
+          content: ' ';
+          border: 1px solid #D5D5D5;
+          width: 90px;
+          height: 90px;
+          top: -6px;
+          left: -6px;
+          position: absolute;
+          display: block;
+        }
+        &:after{
+          @include rotate(5s);
+          content: ' ';
+          border: 1px solid #D5D5D5;
+          width: 86px;
+          height: 86px;
+          top: -4px;
+          left: -4px;
+          position: relative;
+          display: block;
+        }
       }
       .triangle {
-
+        background: url(../../img/triangle.svg)no-repeat;
+        position: relative;
+        &:before{
+          @include rotate(4s);
+          content: ' ';
+          width: 90px;
+          height: 90px;
+          left: -7px;
+          top: -6px;
+          position: absolute;
+          display: block;
+          background: url(../../img/slim-triangle.svg)no-repeat;
+        }
+        &:after{
+          @include rotate(5s);
+          content: ' ';
+          width: 86px;
+          height: 86px;
+          position: relative;
+          display: block;
+          background: url(../../img/slim-triangle.svg)no-repeat;
+          top: -6px;
+          left: -3px;
+        }
       }
 
     }
   }
-  .laptop { background: url(../../img/icon-laptop.svg)}
-  .watch { background: url(../../img/icon-watch.svg)}
-  .network { background: url(../../img/icon-network.svg)}
+  .laptop {
+    background: url(../../img/icon-laptop.svg);
+    border-radius: 50%;
+    position: relative;
+    &:after{
+      @include rotate(6s);
+      content: ' ';
+      border: 1px solid #D5D5D5;
+      width: 94px;
+      height: 94px;
+      border-radius: 50%;
+      top: -8px;
+      left: -8px;
+      position: absolute;
+      display: block;
+    }
+  }
+  .watch {
+    background: url(../../img/icon-watch.svg);
+    position: relative;
+    &:after{
+      @include rotate(6s);
+      content: ' ';
+      border: 1px solid #D5D5D5;
+      width: 94px;
+      height: 94px;
+      top: -8px;
+      left: -8px;
+      position: absolute;
+      display: block;
+    }
+  }
+  .network {
+    background: url(../../img/icon-network.svg)no-repeat;
+    border: none !important;
+    background-color: transparent !important;
+  }
 }

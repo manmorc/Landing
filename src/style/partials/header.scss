@@ -6,8 +6,9 @@
   height: 60px;
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: #B1B1B1;
   border-bottom: 2px solid #D1D1D1;
+  mix-blend-mode: color-dodge;
 
   div {
     margin: 21px;
@@ -16,8 +17,6 @@
     font-size: 18px;
     font-weight: 900;
     line-height: 21px;
-    mix-blend-mode: difference;
-
   }
   .burger {
     width: 30px;

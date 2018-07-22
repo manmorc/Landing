@@ -28,11 +28,20 @@
     function initialization(){
         var myFullpage = new fullpage('#myContainer', {
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-            sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
             paddingTop: '70px',
             slidesNavigation: true,
             controlArrows: false,
-            verticalCentered: false
+            verticalCentered: false,
+            onLeave: function(origin, destination, direction){
+                var params = {
+                    origin: origin,
+                    destination:destination,
+                    direction: direction
+                };
+
+                console.log("--- onLeave ---");
+                console.log(params);
+            }
         });
     }
 
