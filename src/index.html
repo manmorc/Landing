@@ -28,8 +28,8 @@
     function initialization(){
         var myFullpage = new fullpage('#myContainer', {
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-            paddingTop: '60px',
-            navigation: true,
+            sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+            paddingTop: '70px',
             slidesNavigation: true,
             controlArrows: false,
             verticalCentered: false
@@ -38,6 +38,8 @@
 
     //fullPage.js initialization
     initialization();
+
+    fullpage_api.setScrollingSpeed(600);
 </script>
 </body>
 </html>

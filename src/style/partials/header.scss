@@ -4,10 +4,10 @@
   top: 0;
   width: 100%;
   height: 60px;
-  color: white;
   display: flex;
   justify-content: space-between;
-  background-color: #C4C4C4;
+  color: white;
+  border-bottom: 2px solid #D1D1D1;
 
   div {
     margin: 21px;
@@ -16,6 +16,8 @@
     font-size: 18px;
     font-weight: 900;
     line-height: 21px;
+    mix-blend-mode: difference;
+
   }
   .burger {
     width: 30px;

@@ -4,26 +4,31 @@
   font-weight: 900;
   font-size: 24px;
   line-height: 28px;
+  background: linear-gradient(to bottom left, #2ab67e, #4ce1ae);
 
   .title {
-    padding-top: 50px;
+    padding-top: 10px;
+    color: white;
   }
   .postTitle {
     margin-top: 5px;
-    color: #B7B3B3;
+    color: #88ddbf;
   }
   .order {
-    margin-top: 25px;
-    color:white;
     height: 50px;
-    border: none;
+    margin-top: 25px;
+    padding: 14px 20px;
+    background: rgba(255, 255, 255, 0.25);
+
+    color:white;
     font-size: 18px;
     line-height: 21px;
-    padding: 14px 20px;
+
+    border: none;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
-    box-shadow: 0 4px 5px 0 rgba(0,0,0,.2);
+    box-shadow: 0 4px 15px -3px rgba(0,0,0,.1);
   }
   .slider {
     margin-top: 65px;
