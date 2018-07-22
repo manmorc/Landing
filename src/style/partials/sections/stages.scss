@@ -1,0 +1,50 @@
+.stages {
+  background: #F2F2F2;
+  .title {
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: left;
+
+    .devider {
+      height: 5px;
+      width: 50px;
+      background: #B1B1B1;
+      margin: 0 15px;
+    }
+    .text {
+      width: 205px;
+      color: #B1B1B1;
+      font-weight: 900;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+  .slide {
+    padding-top: 50px;
+
+    .head {
+      padding: 0 25px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+
+      .name{
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+      }
+      .number{
+        color: white;
+        font-size: 64px;
+        line-height: 83px;
+        font-weight: bold;
+        font-family: Futura, sans-serif;
+      }
+    }
+    .text{
+      padding: 0 25px;
+      text-align: justify;
+    }
+  }
+}

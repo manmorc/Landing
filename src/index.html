@@ -6,13 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
     <script src="js/main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
 </head>
 <body>
 //= template/header.html
 
-//= template/sections/creatingCites.html
-//= template/sections/weCreate.html
+<div id="myContainer">
+    //= template/sections/creatingCites.html
+    //= template/sections/weCreate.html
+    //= template/sections/ourServices.html
+    //= template/sections/stages.html
+    //= template/sections/form.html
+</div>
 
 //= template/footer.html
+
+<script type="text/javascript" src="js/fullpage.min.js"></script>
+<script>
+
+    function initialization(){
+        var myFullpage = new fullpage('#myContainer', {
+            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+            paddingTop: '60px',
+            navigation: true,
+            slidesNavigation: true,
+            controlArrows: false,
+            verticalCentered: false
+        });
+    }
+
+    //fullPage.js initialization
+    initialization();
+</script>
 </body>
 </html>

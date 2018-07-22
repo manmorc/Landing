@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.slide {
+.sl {
   width:270px;
   height: 180px;
   position: absolute;
@@ -49,14 +49,14 @@
   animation-delay: 7.5s;
 }
 .slide2 {
-  background: url(2.jpg);
+  background: url(../../img/pre-view-1.png);
   animation-delay: 5s;
 }
 .slide3 {
-  background: url(3.jpg);
+  background: url(../../img/pre-view-1.png);
   animation-delay: 2.5s;
 }
 .slide4 {
-  background: url(4.jpg);
+  background: url(../../img/pre-view-1.png);
   animation-delay: 0s;
 }
