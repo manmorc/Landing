@@ -1,5 +1,6 @@
 .stages {
-  background: #F2F2F2;
+  background: white;
+
   .title {
     display: flex;
     padding-top: 20px;
@@ -9,12 +10,12 @@
     .devider {
       height: 5px;
       width: 50px;
-      background: #B1B1B1;
+      background: #333333;
       margin: 0 15px;
     }
     .text {
       width: 205px;
-      color: #B1B1B1;
+      color: #333333;
       font-weight: 900;
       font-size: 22px;
       line-height: 26px;
@@ -33,9 +34,10 @@
         font-size: 24px;
         line-height: 28px;
         font-weight: 700;
+        color: #9269B8;
       }
       .number{
-        color: white;
+        color:#E2E2E2;
         font-size: 64px;
         line-height: 83px;
         font-weight: bold;
@@ -45,6 +47,32 @@
     .text{
       padding: 0 25px;
       text-align: justify;
+    }
+  }
+  .fp-slidesNav {
+    ul {
+      margin: -40px 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        a{
+          span{
+            background-color: #D5D5D5;
+            width:12px !important;
+            height: 12px !important;
+            margin: 0;
+          }
+          &.active {
+           span{
+             background: linear-gradient(to left, #9f3fe8, #ac7cf8);
+             width:18px !important;
+             height: 18px !important;
+             margin: -3px 0 0 -3px !important;
+           }
+          }
+        }
+      }
     }
   }
 }

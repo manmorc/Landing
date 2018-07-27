@@ -1,75 +1,87 @@
-.weCreate {
+.ourServices {
+  --section-color: #3c3c3c;
+  background-color: var(--section-color);
+
   .title {
     display: flex;
     align-items: center;
     justify-content: left;
+    padding-top: 10px;
 
     .devider {
       height: 5px;
       width: 50px;
-      background: #B1B1B1;
       margin: 0 15px;
+      background: white;
     }
     .text {
       width: 110px;
-      color: #B1B1B1;
-      font-weight: 900;
+      color: white;
       font-size: 22px;
+      font-weight: 900;
       line-height: 26px;
     }
   }
 
   .services {
-    margin: 30px 35px;
+    margin: 45px 35px;
     width: calc(100% - 70px);
     color: white;
 
+    .purple {
+      background: linear-gradient(to right, #7255f7, #9c51f7);
+    }
+    .green {
+      background: linear-gradient(to right, #4ae184, #23ac68);
+    }
+    .orange {
+      background: linear-gradient(to right, #fc9b67, #f95445);
+    }
+
     .service {
-      height: 70px;
+      min-height: 70px;
       padding-top: 30px;
+      padding-bottom: 15px;
       margin-bottom: 15px;
-      background: #DADADA;
-      border-top: 15px solid black;
       position: relative;
 
       &:after {
         content: ' ';
         position: absolute;
         top: 0;
-        height: 40px;
-        width: 20px;
-        transform: rotate(55deg) translate(-32px, -9px);
-        background-color: white;
+        height: 17px;
+        width: 40px;
+        background-color: var(--section-color);
+        transform: rotate(-45deg) translate(-7px,-12px);
       }
 
       .name {
         font-weight: 700;
         font-size: 20px;
-        line-height: 23px;
         text-align: center;
-        width: 180px;
         margin: 0 auto;
-      }
-      &.twoLines {
-        padding-top: 20px;
-        padding-bottom: 10px;
+        border-radius: 50px;
+        height: 35px;
+        line-height: 35px;
+        background-color: #575757;
+        width: 200px;
       }
 
       .accordion {
         overflow-y: hidden;
         transition: 2s;
-        bottom: 0;
-        position: absolute;
+        position: relative;
+        min-height: 24px;
+        width: 100%;
+        bottom: -10px;
+        z-index: 2;
 
-        &.closed{
-          height: 24px;
-        }
-        &.opened{
-
-        }
         .text{
           position: relative;
-          top: 100px;
+          padding: 15px;
+          height: 0;
+          display: block;
+          color: transparent;
         }
         .bottom {
           position: absolute;

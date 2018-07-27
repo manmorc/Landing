@@ -6,9 +6,9 @@
   height: 60px;
   display: flex;
   justify-content: space-between;
-  color: #B1B1B1;
+  color: white;
   border-bottom: 2px solid #D1D1D1;
-  mix-blend-mode: color-dodge;
+  transition: 1s;
 
   div {
     margin: 21px;
@@ -22,6 +22,7 @@
     width: 30px;
     height: 19px;
     cursor: pointer;
-    background:url('../../img/icon-burger-menu.svg') no-repeat center center;
+    background-color: white;
+    -webkit-mask: url('../../img/icon-burger-menu.svg') no-repeat center center;
   }
 }

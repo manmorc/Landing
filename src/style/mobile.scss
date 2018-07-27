@@ -7,6 +7,8 @@
 * Custom
 */
 @import "partials/mixins/rotate";
+@import "partials/mixins/placeholder";
+@import "partials/mixins/gradient";
 
 @import "partials/app";
 @import "partials/body";
@@ -14,6 +16,7 @@
 @import "partials/fonts";
 @import "partials/section";
 @import "partials/slider";
+@import "partials/accordion";
 
 @import "partials/sections/creatingCites";
 @import "partials/sections/weCreate";

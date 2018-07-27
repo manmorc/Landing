@@ -1,0 +1,17 @@
+@mixin gradient($col1, $col2){ //unused, remove
+  /* Градиент */
+  background: -moz-linear-gradient(left, $col1 0%, $col2 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, $col1), color-stop(100%, $col2));
+  background: -webkit-linear-gradient(left, $col1 0%, $col2 100%);
+  background: -o-linear-gradient(left, $col1 0%, $col2 100%);
+  background: -ms-linear-gradient(left, $col1 0%, $col2 100%);
+  background: linear-gradient(to right, $col1 0%, $col2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$col1', endColorstr='$col2', GradientType=1);
+  content: "";
+  display: block;
+  /* boldness */
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}

@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
     <script src="js/main.js"></script>
-
     <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_2gpMjV0xqi9jMQKt64VTT");
+        })();
+    </script>
 </head>
 <body>
 //= template/header.html
@@ -24,6 +29,38 @@
 
 <script type="text/javascript" src="js/fullpage.min.js"></script>
 <script>
+    let header = document.getElementById('header');
+    let burgerMenu = document.getElementById('burger-menu');
+    function changeHeaderColor(nextSection){
+        let sectionsMap = {
+            creatingCites: {
+                color: 'white',
+                bgColor: 'transparent',
+            },
+            weCreate: {
+                color: 'black',
+                bgColor: 'white',
+            },
+            ourServices: {
+                color: 'white',
+                bgColor: '#444444',
+            },
+            stages: {
+                color: 'black',
+                bgColor: 'white',
+            },
+            form: {
+                color: 'black',
+                bgColor: 'white',
+            }
+        };
+        // console.log('Setting header color: ', sectionsMap[nextSection].color);
+        header.style.color = sectionsMap[nextSection].color;
+        // console.log('Setting header bgColor: ', sectionsMap[nextSection].bgColor);
+        header.style.backgroundColor  = sectionsMap[nextSection].bgColor;
+        burgerMenu.style.backgroundColor  = sectionsMap[nextSection].color;
+
+    }
 
     function initialization(){
         var myFullpage = new fullpage('#myContainer', {
@@ -32,6 +69,8 @@
             slidesNavigation: true,
             controlArrows: false,
             verticalCentered: false,
+            afterRender: accordion(),
+            anchors:['creatingCites', 'weCreate', 'ourServices', 'stages', 'form'],
             onLeave: function(origin, destination, direction){
                 var params = {
                     origin: origin,
@@ -39,8 +78,9 @@
                     direction: direction
                 };
 
-                console.log("--- onLeave ---");
-                console.log(params);
+                // console.log("--- onLeave ---");
+                // console.log(params);
+                changeHeaderColor(params.destination.anchor);
             }
         });
     }
