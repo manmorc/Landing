@@ -34,6 +34,7 @@
         width: 80px;
         height: 80px;
         margin: 30px 36px 30px 26px;
+        //do not optimize that:
         background-color: #F2F2F2;
         background-repeat: no-repeat;
         background-position: center;
@@ -105,7 +106,7 @@
         background: url(../../img/triangle.svg)no-repeat;
         position: relative;
         &:before{
-          //@include rotate(4s);
+          @include rotate(4s);
           width:80px;
           height: 80px;
           content: ' ';
@@ -117,7 +118,7 @@
           //transform-origin: 63% 50%;
         }
         &:after{
-          //@include rotate(5s);
+          @include rotate(5s);
           width:80px;
           height: 80px;
           content: ' ';
@@ -171,14 +172,13 @@
     background-color: transparent !important;
     position: relative;
     &:after{
-      //@include rotate(6s);
+      @include rotate(6s);
       background: url(../../img/slim-triangle.svg) no-repeat;
       content: ' ';
       width: 80px;
       height: 80px;
       position: absolute;
       display: block;
-      //transform-origin: 67% 50%;
       transform: rotate(90deg);
       background-size: contain;
       top: 0;

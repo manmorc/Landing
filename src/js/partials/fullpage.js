@@ -3137,7 +3137,7 @@
 
             if(options.scrollOverflow && options.scrollOverflowHandler == null){
                 options.scrollOverflow = false;
-                showError('error', 'The option `scrollOverflow:true` requires the file `scrolloverflow.min.js`. Please include it before fullPage.js.');
+                showError('error', 'The option `scrollOverflow:true` requires the file `scrolloverflow.js`. Please include it before fullPage.js.');
             }
 
             //using extensions? Wrong file!

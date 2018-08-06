@@ -21,7 +21,8 @@
     }
   }
   .form-container{
-    margin-top: 30px;
+    max-width: 370px;
+    margin: 30px auto 0;
 
     input, textarea, button{
       height: 40px;

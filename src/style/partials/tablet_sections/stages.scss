@@ -1,0 +1,37 @@
+.stages {
+
+  .title {
+    align-items: baseline;
+
+    .text {
+      display: block;
+      width: 205px;
+
+      .postTitle {
+        padding-top: 20px;
+        width: 430px;
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+
+
+  }
+
+  .slide {
+    .head {
+      .number {
+        font-size: 96px;
+        line-height: 124px;
+      }
+    }
+  }
+  .fp-slidesContainer {
+    width: 100% !important;
+  }
+  .fp-slidesNav {
+    display: none;
+  }
+}

@@ -8,6 +8,7 @@
  * Custom
  */
 //= partials/app.js
-//= partials/fullpage.js
 //= partials/accordion.js
 //= partials/form.js
+//= partials/scrolloverflow.js
+//= partials/fullpage.js

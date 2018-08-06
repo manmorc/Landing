@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <title>Я собираю проекты как рок звезда</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/mobile.css">
-    <script src="js/main.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet"
+          media="only screen and (min-width: 1200px)"
+          href="css/tablet.css">
+
+    <script src="js/main.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
     <script type="text/javascript">
         (function(){
@@ -78,9 +83,25 @@
                     direction: direction
                 };
 
-                // console.log("--- onLeave ---");
-                // console.log(params);
+                console.log("--- onLeave ---");
+                console.log(params);
                 changeHeaderColor(params.destination.anchor);
+            },
+            onSlideLeave: function( section, origin, destination, direction){
+                //section.index вертикальный уровень слайдов
+                //origin.index горизонтальный уровень слайдов
+                //direction: right/left
+                var leavingSlide = this;
+
+                //переход от первого слайда 2го раздела вправо
+                if(origin.index === 0){
+                    console.log("Покидание первого слайда!!");
+                }
+
+                // переход от 3го слайда 2го раздела влево
+                if(origin.index === 2){
+                    console.log("Переход к слайду 2! ");
+                }
             }
         });
     }
